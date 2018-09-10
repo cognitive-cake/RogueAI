@@ -7,5 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Cognitive Cake",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cognitive-cake/RogueAI.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "bungie",
+    "destiny2"
+  ],
+  "bugs": {
+    "url": "https://github.com/cognitive-cake/RogueAI/issues"
+  },
+  "homepage": "https://github.com/cognitive-cake/RogueAI#readme"
 }
