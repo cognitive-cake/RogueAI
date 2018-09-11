@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const auth = require('./auth.json');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -6,9 +7,14 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-    if (msg.content === 'ping') {
+    if (msg.content === '!ping') {
         msg.reply('pong');
-    }
+    };
+    // If the message is "what is my avatar"
+    if (msg.content === '!getMyAvatar') {
+        // Send the user's avatar URL
+        msg.reply(msg.author.avatarURL);
+    };
 });
 
-client.login('NDg4Njc2NjM1NTI5NDQ1Mzc2.DnkyXg.0ytt9jEpX0rngRf6Djqvr-hyxcA');
+client.login(auth.token);
